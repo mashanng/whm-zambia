@@ -1,12 +1,124 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>hello people</title>
-</head>
-<body>
-	<h1>Hello world!!</h1>
-<p>this is a tryout okay</p>
-</body>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>SHARED HISTORIES</title>
+        <link rel="stylesheet" type="text/css" href="stylee.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" 
+rel="stylesheet">
+<link rel="stylesheet" 
+href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="main">
+            <div class="text-box">
+                <h1>DISCOVER</h1>
+                <p>Making websites is super easy, <br> just have to
+                     learn html, <br>css and javascript.</p>
+                     <a href="" class="hero-btn">Visit Us To Know More</a>
+            </div>
+    
+        </section>
+
+    <section class="header">
+            <nav> 
+                <a href="index.html"> <img src="images/Screenshot_8-removebg-preview.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                   <ul>
+                     
+                      <li><a href="">ABOUT</a></li>
+                      <li><a href="">LIBRARY</a></li>
+                      <li><a href="">CONTACT US</a></li>
+                      <li><a href="">SUPPORT US</a></li>
+                      <li><a href="">WIKI SEARCH</a></li>
+                   </ul>
+
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()" ></i>
+            </nav>
+       
+    </section>
+
+    
+
+
+        <!------course----------------->
+    <section class="course">
+           <h1>Courses we Offer</h1>
+           <p>
+               Ye ye we offer a lot of courses people, just chill.
+           </p>
+         <div class="row">
+           <div class="class-col">
+               <h3>Intermediate</h3>
+               <p>ye asyou know not everyone can begood at 
+                   hkm nkmnkm gfmg gkmgklgmnl kgfmngk
+                   atll blablabla but youlearn sometimes</p>
+           </div>
+           <div class="class-col">
+            <h3>Degree</h3>
+            <p>ye asyou know not everyone can begood at 
+                hkm nkmnkm gfmg gkmgklgmnl kgfmngk
+                atll blablabla but youlearn sometimes</p>
+           </div>
+           <div class="class-col">
+            <h3>Post Graduate</h3>
+            <p>ye asyou know not everyone can begood at 
+                hkm nkmnkm gfmg gkmgklgmnl kgfmngk
+                atll blablabla but youlearn sometimes</p>
+            </div>
+        </div>
+    </section>
+
+<!-------------campus----------->
+    <section class="campus">
+            <h1>Our Global Campus</h1>
+            <p>Yes as you know this is our campus
+                and we loce it so much so please get out.
+            </p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="images/london.png">
+                <div class="layer">
+                    <h3>LONDON</h3>
+                </div>
+            </div>   
+            <div class="campus-col">
+                    <img src="images/newyork.png">
+                    <div class="layer">
+                        <h3>NEW YORK</h3>
+                </div>
+            </div>    
+            <div class="campus-col">
+                    <img src="images/washington.png">
+                    <div class="layer">
+                        <h3>WASHINGTON</h3>
+                </div>
+            </div>
+        </div>
+   </section>
+   
+<!--------facilities---------------->
+
+
+
+
+
+
+<!-----javascript toggle menu----->
+<script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0"
+    }
+    function hideMenu(){
+        navLinks.style.right="-400px"
+    }
+</script>
+
+
+    </body>
 </html>
