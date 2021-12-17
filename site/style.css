@@ -31,7 +31,7 @@ nav img{
 .nav-links ul li {
     list-style: none;
     display: inline-block;
-    padding: 0px 15px;
+    padding: 0px 12px;
     position: relative;
 }
 
@@ -59,16 +59,10 @@ nav img{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align:center;
+
 }
 
-.text-box h1{
-    font-size: 50px;
-}
-.text-box p{
 
-    font-size: 10px;
-    color: white;
-}
 
 /*to hide the icons from the fuller screen*/
 nav .fa{
@@ -106,9 +100,10 @@ nav .fa{
         padding: 30px;
     }
 }
-/*-------course-----*/
+/*-------about section--------------*/
 .about{
     width: 100%;
+    height: 100vh;
     margin: auto;
     text-align:left;
     padding-top: 50px;
@@ -138,6 +133,9 @@ p{
 .about-section{
     width: 70%;
     margin: auto;
+    position: absolute;
+    transform: translate(0%,50%);
+padding-left: 200px;
 }
 
 
@@ -150,14 +148,21 @@ p{
 /*------------mission-------------*/
 .mission{
     width: 100%;
+    height: 70vh;
     margin: auto;
     text-align:center;
     padding-top: 50px;
     padding-bottom: 50px;
     background-color:rgb(255, 255, 255);
 }
+
+.mission-section{
+    position: absolute;
+    transform: translate(0%,50%);
+}
+
 h2.mission-head{
-    color: black;
+    color: rgb(0, 0, 0);
 }
 p.mission-text{
     color: rgb(20, 17, 17);
@@ -187,46 +192,40 @@ p.mission-text{
 /*------------round pics gallery--------*/
 
 .gallery{
-background-color: #ddd;
 width: 100%;
-height: 55vh;
+height:100vh;
 margin: auto;
-padding-bottom: 0px;
-margin-bottom: 50px;
 justify-content:center ;
 
 }
 .box-gallery{
     display: flex;
     flex-direction: row;
-    background-color: #ddd;
-    width: 100%;
      margin: auto;
-     padding-bottom: 0px;
-    margin-bottom: 50px;
     justify-content:center ;
+
 }
 
 .box{
-width: 150px;
-height: 150px;
-background: chocolate;
 margin: 100px -20px;
-margin-bottom: 0px;
 transition: 1s;
 border-radius: 50%;
+margin-top: 210px;
+
 }
 .box:hover{
     transform: scale(1.3);
     background: darkgoldenrod;
-    z-index: 2;
+    z-index: auto;
     box-shadow: 2px 2px 2px #000;
 }
 img{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+    
 }
+/*---------------join button---------*/
 .join-btn {
     color: rgb(255, 255, 255); 
     font-size: 13px;
@@ -252,3 +251,113 @@ img{
 .join-btn:active {
     background: #144E75;
  }
+
+/*------------individual changes--------*/
+
+.gallery#first{
+background-color: rgb(246, 246, 246);
+}
+.gallery#second{
+  background: #FFBE4D;
+  background: -moz-linear-gradient(left, #FFBE4D 0%, #FF621F 50%, #E93D25 100%);
+  background: -webkit-linear-gradient(left, #FFBE4D 0%, #FF621F 50%, #E93D25 100%);
+  background: linear-gradient(to right, #FFBE4D 0%, #FF621F 50%, #E93D25 100%);
+
+}
+.gallery#third {
+    background: #FFBE4D;
+    background: -moz-linear-gradient(left, #FFBE4D 0%, #FF621F 88%, #E93D25 100%);
+    background: -webkit-linear-gradient(left, #FFBE4D 0%, #FF621F 88%, #E93D25 100%);
+    background: linear-gradient(to right, #FFBE4D 0%, #FF621F 88%, #E93D25 100%);
+}
+/*-------------------footer--------------------------------*/
+
+.footer-content {
+    padding:40px 0;
+    background-color:ffffff;
+    color:4b4c4d;
+  }
+
+
+  .footer-content ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .footer-content li {
+    padding:0 10px;
+  }
+  
+  .footer-content ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-content ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-content .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-content .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-content .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-content .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
+
+  /*-----------font size for the heading-----*/
+  #big{
+      font-size: 50px;
+  }
+  #small{
+      font-size: 12px;
+  }
+  .text-boxc{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    transform: translate(0%, 7%);
+    text-align:left;
+    padding: 0px ;
+    padding-left:500px;
+    margin-bottom: 60px;
+    margin-top: 20px;
+  }
+
+  .about-section{
+      opacity: 0;
+      transition: opacity 250ms ease-in;
+  }
+  .about-section.appear{
+      opacity: 1;
+  }
