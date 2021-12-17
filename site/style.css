@@ -18,18 +18,20 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+
 nav img{
     width:200px;
-    
+    display:none
 }
 .nav-links{
     flex: 1;
     text-align: right;
+
 }
 .nav-links ul li {
     list-style: none;
     display: inline-block;
-    padding: 0px 12px;
+    padding: 0px 15px;
     position: relative;
 }
 
@@ -241,9 +243,6 @@ img{
     cursor: pointer;
     position: relative;
     margin-left:auto;
-   /* margin-right: auto;
-    margin-bottom:30px;
-    margin-top: 30px;*/
     margin:auto ;
 }
 
