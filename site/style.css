@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 .header {
     min-height: 100vh;
@@ -11,21 +12,29 @@
     background-position: center;
     background-size: cover ;
     position: relative;
+
 }
 nav {
     display: flex;
-    padding: 0% 6% ;
+    /*padding: 0% 6% ;*/
+    padding: 1rem 0rem;
     justify-content: space-between;
     align-items: center;
+    z-index: 100000;
+    width: 100%;
+    position: fixed;
+    background: -webkit-linear-gradient(left,#E93D25 0%, #FF621F 20%,#FFBE4D 100%);
+    
 }
 
 nav img{
     width:200px;
-    display:none
+    display:contents;
 }
 .nav-links{
     flex: 1;
     text-align: right;
+    
 
 }
 .nav-links ul li {
@@ -52,16 +61,27 @@ nav img{
 
 /*the heading and the front words*/
 .text-box{
-    width: 90%;
-    color: rgb(255, 255, 255);
-    position: absolute;
-    top: 60%;
+    width: 100%;
+  height:100vh;
+    position: relative;
+    text-align:left;
+    
+}
+.align-box{
+    position:absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align:center;
-
 }
-
+.align-box h1{
+  color:#fff;
+}
+#big{
+      font-size: 50px;
+  }
+#small{
+      font-size: 12px;
+  }
 
 
 /*to hide the icons from the fuller screen*/
@@ -101,41 +121,25 @@ nav .fa{
     }
 }
 /*-------about section--------------*/
-.about{
+
+.about-section{
     width: 100%;
+  position: relative;
     height: 100vh;
-    margin: auto;
     text-align:left;
-    padding-top: 50px;
-    padding-bottom: 50px;
     background-color:rgb(24, 23, 23);
 }
-h2{
-    font-size: 40px;
-    font-weight: 400;
-    color: white;
-    padding: 10px;
-}
-h3{
-    color: white;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-}
-p{
-    color:#f0eadc;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
 
+.box-section{
+  position: absolute;
+  left:50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
 }
-.about-section{
-    width: 70%;
-    margin: auto;
-    position: absolute;
-    transform: translate(0%,50%);
-padding-left: 200px;
+ .about-section h2, .about-section h3, .about-section p {
+    color: #fff;
+   font-weight: 300;
+   margin: 30px;
 }
 
 
@@ -146,30 +150,28 @@ padding-left: 200px;
     }
 }
 /*------------mission-------------*/
+
 .mission{
     width: 100%;
-    height: 70vh;
-    margin: auto;
+    height: 100vh;
+    position:relative;
     text-align:center;
-    padding-top: 50px;
-    padding-bottom: 50px;
     background-color:rgb(255, 255, 255);
 }
 
 .mission-section{
     position: absolute;
-    transform: translate(0%,50%);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
 
-.mission-head{
-    color:#000;
+.mission h2, .mission p {
+  color: rgb(20, 17, 17);
+  font-weight: 300;
+  margin: 40px;
 }
-.mission-text{
-    color: rgb(20, 17, 17);
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-bottom: 50px;
-}
+
 .hero-btn{
     border-radius: 30px;
     display: inline-block;
@@ -181,6 +183,7 @@ padding-left: 200px;
     background: transparent;
     position: relative;
     cursor: pointer;
+    margin-top: 40px;
 }
 .hero-btn:hover{
     border: 1px solid #000000;
@@ -228,12 +231,11 @@ img{
 /*---------------join button---------*/
 .join-btn {
     color: rgb(255, 255, 255); 
-    font-size: 13px;
-    line-height: 17px;
-    padding: 7px 10px; 
-    padding-bottom: 7px;
-    border-radius: 15px;
-    width: 50px;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 10px 10px 10px 10px; 
+    border-radius: 20px;
+    width: 100px;
     text-align: center;
     font-weight: normal;
     text-decoration: none;  
@@ -336,13 +338,8 @@ background-color: rgb(246, 246, 246);
     margin-bottom:0;
   }
 
-  /*-----------font size for the heading-----*/
-  #big{
-      font-size: 50px;
-  }
-  #small{
-      font-size: 12px;
-  }
+ 
+ 
   .text-boxc{
     color: rgb(255, 255, 255);
     position: absolute;
@@ -353,17 +350,10 @@ background-color: rgb(246, 246, 246);
     margin-bottom: 60px;
     margin-top: 20px;
   }
-/*------------------transitions------------*/
- /* .about-section{
-      opacity: 0;
-      transition: opacity 250ms ease-in;
-  }
-  .about-section.appear{
-      opacity: 1;
-  }*/
+
 
   /*-------------------- css rules for intersection observer another try---------*/
-  h2,h3, p, img{
+  h3, p, img{
       opacity: 0;
       position: relative;
       bottom: -100px;
@@ -372,7 +362,8 @@ background-color: rgb(246, 246, 246);
 
   .show {
      opacity: 1;
-     bottom: 0;
+     
+    bottom: 0;
   }
   .box:nth-of-type(1) .show{
       transition-delay: 0s;
