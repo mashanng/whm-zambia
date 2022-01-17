@@ -1,27 +1,4 @@
-/*const faders=document.querySelectorAll('.about-section');
 
-const appearOptions={
-    threshold:1,
-    rootMargin:"0px 0px -100px 0px"
-};
-
-const appearOnScroll = new IntersectionObserver(function(
-    entries,
-    appearOnScroll
-) {
-    entries.forEach(entry=>{
-        if (!entry.isIntersecting){
-            return;
-        } else{
-            entry.target.classList.add("appear");
-            appearOnScroll.unobserve(entry.target);
-        }
-    });
-},appearOptions);
-
-faders.forEach(fader=>{
-    appearOnScroll.observe(fader);
-});    */
 
 window.addEventListener('DOMContentLoaded', setup);
 
@@ -40,8 +17,7 @@ function setup (){
         });
     },options);
 
-    const h2 = document.querySelector('h2');
-    observer.observe(h2);
+
 
     const h3 = document.querySelector('h3');
     observer.observe(h3);

@@ -1,0 +1,13 @@
+# Query: live preview
+# ContextLines: 1
+
+
+2 results - 1 file
+
+.vscode\tasks.json:
+  4  		{
+  5: 			"type": "Live Preview",
+  6  			"args": [],
+  7  			"problemMatcher": [],
+  8: 			"label": "Live Preview: Run Server"
+  9  		}
